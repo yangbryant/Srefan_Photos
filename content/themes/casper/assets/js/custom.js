@@ -59,7 +59,7 @@
 	$("#search-field").ghostHunter({
 		results: ".search-result-inner",
 		onKeyUp: true,
-		info_template: "<h3 class='title'>Articles: {{amount}}</h3>",
+		info_template: "<h3 class='title'>已找到: {{amount}} 张</h3>",
 		result_template: "<div><a class='title' href='{{link}}'>{{title}}</a><small>{{pubDate}}</small></div>",
 		onComplete: function( results ){
 			$("#search-result").show();
