@@ -18,7 +18,7 @@
                 {{/if}}
                 {{author}}
               </span>
-              <time class="post-date px1" datetime="{{date format='YYYY-MM-DD'}}">{{date format="Do MMM YYYY"}} {{tags prefix=" on "}}</time>
+              <time class="post-date px1" datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}} {{tags prefix=" - "}}</time>
             </div>
         </header>
 
@@ -27,25 +27,6 @@
         </div>
 
         <footer class="post-footer">
-
-            <div class="share center">
-                <h4 class="h5 caps mt0">Share this post</h4>
-                <a class="inline-block hop5 px1" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <img class="align-middle" src="{{asset 'images/twitter.svg'}}" alt="Twitter icon">
-                    <span class="hide">Twitter</span>
-                </a>
-                <a class="inline-block hop5 px1" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <img class="align-middle" src="{{asset 'images/facebook-square.svg'}}" alt="Facebook icon">
-                    <span class="hide">Facebook</span>
-                </a>
-                <a class="inline-block hop5 px1" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <img class="align-middle" src="{{asset 'images/google-plus.svg'}}" alt="Google Plus icon">
-                    <span class="hide">Google+</span>
-                </a>
-            </div>
 
             {{#if @labs.subscribers}}
             <div class="subscribe light p3 mt3 sm-mt4 bg-yellow-light clearfix">
@@ -61,23 +42,21 @@
 
 </main>
 
-<aside class="read-next mx-auto clearfix">
+<!-- <aside class="read-next mx-auto clearfix">
     {{#next_post}}
     <div class="sm-col-6 right mb3 sm-mb0 read-next-story right-align">
         <a class="block px4" href="{{url}}">
-            <h2 class="h4 mb1">{{title}}</h2>
-            <p class="h6 light mb0">{{excerpt words="19"}}&hellip;</p>
+            <h2 class="h2 mb1">{{title}}</h2>
         </a>
     </div>
     {{/next_post}}
     {{#prev_post}}
     <div class="sm-col-6 left read-next-story prev">
         <a class="block px4" href="{{url}}">
-            <h2 class="h4 mb1">{{title}}</h2>
-            <p class="h6 light mb0">{{excerpt words="19"}}&hellip;</p>
+            <h2 class="h2 mb1">{{title}}</h2>
         </a>
     </div>
     {{/prev_post}}
-</aside>
+</aside> -->
 
 {{/post}}

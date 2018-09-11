@@ -10,7 +10,7 @@
             <li class="nav-{{slug}}{{#if current}} nav-current{{/if}} border-bottom" role="presentation"><a class="py1 block caps black" href="{{url absolute="true"}}">{{label}}</a></li>
         {{/foreach}}
     </ul>
-    <a class="inline-block hop5 pl1" href="{{@blog.url}}/rss/" title="Subscribe to RSS feed"><span class="hide">Subscribe</span><img class="align-middle" src="{{asset 'images/feed.svg'}}" alt="Feed icon"></a>
+    <!-- <a class="inline-block hop5 pl1" href="{{@blog.url}}/rss/" title="Subscribe to RSS feed"><span class="hide">Subscribe</span><img class="align-middle" src="{{asset 'images/feed.svg'}}" alt="Feed icon"></a> -->
     {{#if @blog.facebook}}
       <a class="inline-block hop5 pl1" href="{{facebook_url @blog.facebook}}" title="Facebook page"><span class="hide">Facebook page</span><img class="align-middle" src="{{asset 'images/facebook-square.svg'}}" alt="Facebook icon"></a>
     {{/if}}
